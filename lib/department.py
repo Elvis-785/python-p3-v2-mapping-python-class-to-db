@@ -70,5 +70,5 @@ class Department:
             WHERE id = ?
         """
         
-        CURSOR.execute(sql, (self.name, self.location, self.id))
+        CURSOR.execute(sql, (self.id,))
         CONN.commit()
